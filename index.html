@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>とうきょう認知症ナビ - 新しい認知症観でつながる、支え合う</title>
+    
+    <!-- アクセシビリティとSEO対応 -->
+    <meta name="description" content="東京都認知症ポータルサイト。認知症とともに生きる、相談・つながる、支援・サービスを利用する情報を提供しています。" />
+    <meta name="keywords" content="認知症,東京都,相談,支援,希望大使,サポーター,医療,介護,新しい認知症観" />
+    
+    <!-- 認知症当事者・高齢者向けアクセシビリティ対応 -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    
+    <!-- 日本語フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 高コントラスト・大きなフォントサイズ初期設定 -->
+    <style>
+        html {
+            font-size: 18px; /* デフォルト18px */
+        }
+        
+        @media (max-width: 768px) {
+            html {
+                font-size: 20px; /* モバイルでさらに大きく */
+            }
+        }
+        
+        /* 認知症当事者向けアクセシビリティ強化 */
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* 高コントラスト設定対応 */
+        @media (prefers-contrast: high) {
+            :root {
+                --text-color: #000000;
+                --bg-color: #ffffff;
+                --link-color: #0000ff;
+            }
+        }
+        
+        /* 動作削減設定対応 */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
