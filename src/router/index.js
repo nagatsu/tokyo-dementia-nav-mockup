@@ -22,6 +22,9 @@ import SupporterTrainingPage from '../pages/SupporterTrainingPage.vue'
 import EmergencyContactPage from '../pages/EmergencyContactPage.vue'
 import MedicalCenterPage from '../pages/MedicalCenterPage.vue'
 
+// Scenario Pages (Issue #137)
+import ParentDiagnosedPage from '../pages/scenarios/ParentDiagnosedPage.vue'
+
 const routes = [
   {
     path: '/',
@@ -124,6 +127,17 @@ const routes = [
     meta: {
       title: '認知症の専門医療機関 | とうきょう認知症ナビ',
       description: '東京都認知症疾患医療センター、認知症サポート医などの医療機関情報です。'
+    }
+  },
+  
+  // シナリオ別体験ページ (Issue #137)
+  {
+    path: '/scenarios/parent-diagnosed',
+    name: 'ParentDiagnosed',
+    component: ParentDiagnosedPage,
+    meta: {
+      title: '親が認知症と診断されたとき | とうきょう認知症ナビ',
+      description: '親が認知症と診断されたときの不安や混乱に寄り添い、段階的なサポートをお伝えします。'
     }
   },
   

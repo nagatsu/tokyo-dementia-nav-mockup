@@ -54,7 +54,7 @@
             :title="'診断を受けてこれからが心配'"
             :description="'これからどう過ごしていけばいいの？'"
             :actions="[
-              { text: '社会参加について', link: '/living-with-dementia' },
+              { text: '親が診断されたとき', link: '/scenarios/parent-diagnosed' },
               { text: '専門医療機関', link: '/medical-centers' },
               { text: '生活を支える制度', link: '/support-and-services' }
             ]"
